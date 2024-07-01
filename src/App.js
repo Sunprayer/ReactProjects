@@ -1,5 +1,6 @@
 import "./App.css";
 import Accordion from "./components/accordion";
+import LoadMoreButton from "./components/loadMore";
 import RandomColor from "./components/randomColor";
 import ImageSlider from "./components/slider";
 import StarRating from "./components/stars";
@@ -19,6 +20,7 @@ function App() {
         page={"1"}
         limit={"10"}
       />
+      <LoadMoreButton />
     </div>
   );
 }

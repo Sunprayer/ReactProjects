@@ -4,6 +4,8 @@ import LoadMoreButton from "./components/loadMore";
 import RandomColor from "./components/randomColor";
 import ImageSlider from "./components/slider";
 import StarRating from "./components/stars";
+import SideMenu from "./components/menuView";
+import menus from "./components/menuView/data";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         limit={"10"}
       />
       <LoadMoreButton />
+      {/** side menu */}
+      <SideMenu menus={menus} />
     </div>
   );
 }

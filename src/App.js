@@ -6,6 +6,7 @@ import ImageSlider from "./components/slider";
 import StarRating from "./components/stars";
 import SideMenu from "./components/menuView";
 import menus from "./components/menuView/data";
+import QRCodeGenerator from "./components/codeGenerator";
 
 function App() {
   return (
@@ -22,9 +23,12 @@ function App() {
         page={"1"}
         limit={"10"}
       />
-      <LoadMoreButton />
-      {/** side menu */}
+      {/** Load more button */}
+      {/** <LoadMoreButton /> */}
+      {/** Side menu */}
       <SideMenu menus={menus} />
+      {/** QR code generator */}
+      <QRCodeGenerator />
     </div>
   );
 }

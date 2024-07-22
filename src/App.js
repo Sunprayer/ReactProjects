@@ -7,6 +7,7 @@ import StarRating from "./components/stars";
 import SideMenu from "./components/menuView";
 import menus from "./components/menuView/data";
 import QRCodeGenerator from "./components/codeGenerator";
+import Count from "./components/count";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
       <SideMenu menus={menus} />
       {/** QR code generator */}
       <QRCodeGenerator />
+      {/** Count */}
+      <Count />
     </div>
   );
 }

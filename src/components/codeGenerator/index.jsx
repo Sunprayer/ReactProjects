@@ -16,7 +16,7 @@ export default function QRCodeGenerator() {
           type="text"
           name="qr-code"
           value={input}
-          placeholder="Enter value gere"
+          placeholder="Enter value here"
         />
         <button
           disabled={input && input.trim() === "" ? true : false}

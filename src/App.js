@@ -9,6 +9,7 @@ import menus from "./components/menuView/data";
 import QRCodeGenerator from "./components/codeGenerator";
 import Count from "./components/count";
 import LightDarkMode from "./components/lightDarkMode";
+import ScrollIndicator from "./components/scrollIndicator";
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
       <Count />
       {/** Light/dark mode with regular css */}
       <LightDarkMode />
+      {/** scroll indicator */}
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
     </div>
   );
 }

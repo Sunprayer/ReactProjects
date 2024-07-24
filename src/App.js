@@ -8,6 +8,7 @@ import SideMenu from "./components/menuView";
 import menus from "./components/menuView/data";
 import QRCodeGenerator from "./components/codeGenerator";
 import Count from "./components/count";
+import LightDarkMode from "./components/lightDarkMode";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
       <QRCodeGenerator />
       {/** Count */}
       <Count />
+      {/** Light/dark mode with regular css */}
+      <LightDarkMode />
     </div>
   );
 }
